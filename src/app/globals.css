@@ -1,14 +1,45 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #070303;
+  --foreground: #dbcbcb;
+  --blueground: #124a9e;
+  --color:#231ec6;
+  --min-height: 100%;
+
+  --button-background : #dfe1e4;
+  --button-foreground : #c9b8b8;
+  --button-padding : 10px;
+  --button-border : 1px;
 }
 
-@media (prefers-color-scheme: dark) {
+
+[data-theme = "light"] {
+  --background: white;
+  --foreground: rgb(210, 198, 198);
+    --button-background : #000000;
+  --button-foreground : #e9c7c7;
+   --button-padding : 10px;
+    --button-border : 1px;
+}
+[data-theme ="dark"] {
+--background: black;
+  --foreground: white;
+    --button-background : #dfe1e4;
+  --button-foreground : #000000;
+   --button-padding : 10px;
+    --button-border : 1px;
+}
+
+[data-theme = "blue"] {
+--background: blue;
+--foreground: white;
+}
+
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 html {
   height: 100%;
@@ -24,8 +55,9 @@ body {
   min-height: 100%;
   display: flex;
   flex-direction: column;
+  gap: 10rem;
   color: var(--foreground);
-  background: var(--background);
+  background-color: var(--background);
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -42,8 +74,8 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
-}
+} */
