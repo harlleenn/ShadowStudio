@@ -1,8 +1,9 @@
 "use client"
 
 import React from 'react'
-import './globals.css'
-import MainContainer from '../../components/MainContainer'
+
+import styles from "./theme.module.css"
+
 export default function Theme() {
  
     const handleButton = (theme) => {
@@ -14,17 +15,14 @@ export default function Theme() {
             body.setAttribute("data-theme" , "light")
         } else if (theme === "light") {
             body.setAttribute("data-theme","blue")
-        }else {
-            body.setAttribute("data-theme" , "blue")
         }
         console.log("i was clicked")
     }
   return (
-    <div>
-        <button onClick={() => handleButton("dark")}>Light</button>
-        <button onClick={() => handleButton("light")}>Dark</button>
-        <button onClick={() =>handleButton("blue")}>Blue</button>
-        <MainContainer/>
+    <div className={styles.container}>
+        <button onClick={() => handleButton("dark")} className={styles.button}>Light</button>
+        <button onClick={() => handleButton("light")} className={styles.button}>Dark</button>
+        
     </div>
   )
 }

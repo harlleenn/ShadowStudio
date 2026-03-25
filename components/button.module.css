@@ -1,8 +1,0 @@
-.button {
-  background-color : var(  --button-background );
-  color: var(--button-foreground);
-}
-.main {
-  background-color: var(---background);
-  display: flex;
-}

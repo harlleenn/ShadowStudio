@@ -1,0 +1,21 @@
+.boxcontainer{
+    padding: 20px;
+    background-color: var(--box-background);
+   margin-left: 10px;
+  width: 40%;
+  height:300px;
+  border-radius: 20px;
+}
+.text{ 
+    display: flex;
+    color:var(--box-color);
+    justify-content: center;
+    justify-self: center;
+    align-self: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+}
+    /* background-color: rgb(255, 255, 255);
+
+/* what is the diffeerence betwee selffff */

@@ -1,0 +1,14 @@
+
+.container{
+    position: absolute;
+    top:10;
+    right:10;
+    gap: 10px;
+    background-color: pink;
+    
+}
+.button{
+    padding: 5px;
+    background-color: var(--button-background);
+    color: var(--button-text);
+}

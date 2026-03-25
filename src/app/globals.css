@@ -1,38 +1,46 @@
 :root {
   --background: #070303;
   --foreground: #dbcbcb;
-  --blueground: #124a9e;
-  --color:#231ec6;
+  --color: #231ec6;
   --min-height: 100%;
 
-  --button-background : #dfe1e4;
-  --button-foreground : #c9b8b8;
-  --button-padding : 10px;
-  --button-border : 1px;
+  --button-background: #000000;
+  --button-foreground: #c9b8b8;
+  --button-padding: 10px;
+  --button-border: 1px;
+  --button-text: #c9b8b8;
+
+  --box-background: white;
+  --box-color: black;
+  --box-width: 50%
 }
 
-
-[data-theme = "light"] {
+[data-theme="light"] {
   --background: white;
   --foreground: rgb(210, 198, 198);
-    --button-background : #000000;
-  --button-foreground : #e9c7c7;
-   --button-padding : 10px;
-    --button-border : 1px;
+  --button-background: #000000;
+  --button-foreground: #e9c7c7;
+  --button-padding: 10px;
+  --button-border: 1px;
+  --button-color: var(--button-color);
+  --box-background: black;
+  --box-color: white;
 }
-[data-theme ="dark"] {
---background: black;
+[data-theme="dark"] {
+  --background: black;
   --foreground: white;
-    --button-background : #dfe1e4;
-  --button-foreground : #000000;
-   --button-padding : 10px;
-    --button-border : 1px;
+  --button-background: #dfe1e4;
+  --button-foreground: #000000;
+  --button-padding: 10px;
+  --button-border: 1px;
+  --box-background: white;
+  --box-color: black;
 }
 
-[data-theme = "blue"] {
+/* [data-theme = "blue"] {
 --background: blue;
 --foreground: white;
-}
+} */
 
 /* @media (prefers-color-scheme: dark) {
   :root {
@@ -56,6 +64,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10rem;
+  padding: 10px;
+  justify-content: center;
   color: var(--foreground);
   background-color: var(--background);
   font-family: Arial, Helvetica, sans-serif;
