@@ -1,5 +1,16 @@
 .main{
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background-color: rgb(206, 47, 47);
+    height:100%; */
+}
+.page{
+      display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* background-color: rgb(164, 65, 65); */
+    /* max-height:100vh; */
+    min-height: 100vh;
+
 }

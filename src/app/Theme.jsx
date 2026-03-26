@@ -1,7 +1,7 @@
 "use client"
 
 import React from 'react'
-
+import './globals.css'
 import styles from "./theme.module.css"
 
 export default function Theme() {
