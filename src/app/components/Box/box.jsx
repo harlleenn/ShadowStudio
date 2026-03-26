@@ -8,7 +8,6 @@ function Box () {
             <p className={styles.text}>
                   Hello i am a box where you can see the shadows
             </p>
-          
         </div>
     )
 }

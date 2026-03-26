@@ -12,7 +12,8 @@
 
   --box-background: white;
   --box-color: black;
-  --box-width: 50%
+  --box-width: 30%;
+  --box-shadow: 10px 10px 10px  white
 }
 
 [data-theme="light"] {
